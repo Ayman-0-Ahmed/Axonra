@@ -1,0 +1,15 @@
+nav {
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+}
+
+li {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
