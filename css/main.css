@@ -1,15 +1,25 @@
+body{
+  margin: 0;
+}
+
 nav {
   list-style-type: none;
   display: flex;
   width: 100%;
+  height: 20%;
 }
 
 li {
+  align-self: center;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
+  background-color: rgba(253, 23, 23, 0.47);
+  width: 10%;
 }
 
 a {
   text-decoration: none;
   color: black;
+  font-size: 160%;
 }
