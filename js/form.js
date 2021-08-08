@@ -1,18 +1,15 @@
-function validate(field) {
-    var field = document.getElementById('fname-femail').value;
+function validate() {
+    var email_username = document.getElementById('fname-femail').value;
 
-    if (/\@/.test(field)) {
-        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(field)) {
+    if (/\@/.test(email_username)) {
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email_username)) {
             return (true)
         }
         console.log("You have entered an invalid email address!");
         return (false)
     } else {
-        // Validate username
-        var error = "";
-        var stripped = field.replace(/[\(\)\.\-\ ]/g, '');
 
-        if (stripped == "") {
+        if (/^\w+([\.-]?\w+)\w+([\.-]?\w+)/.test(email_username)) {
             alert("You didn't enter a phone number.");
             error = "You didn't enter a phone number.";
         } else if (isNaN(parseInt(stripped))) {
