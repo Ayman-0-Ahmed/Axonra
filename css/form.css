@@ -1,0 +1,19 @@
+body {
+  background-color: lightgrey;
+}
+
+form {
+  width: 30%;
+  height: 50vh;
+  margin-right: 35%;
+  margin-left: 35%;
+  margin-top: 25vh;
+  margin-bottom: 25vh;
+  align-self: center;
+}
+
+input {
+  width: 47.5%;
+  margin-left: 25%;
+  margin-right: 25%;
+}

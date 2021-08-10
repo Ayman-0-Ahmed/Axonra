@@ -1,12 +1,12 @@
 body{
   margin: 0;
+  width: 100%;
 }
 
 nav {
   list-style-type: none;
   display: flex;
   width: 100%;
-  height: 20%;
   background-color: lightblue;
 }
 
@@ -21,18 +21,30 @@ nav {
   background-color: rgba(253, 23, 23, 0.47);
   width: 11%;
   border-radius: 4vw;
+  position: relative;
+  top: -0.26px;
 }
 
 a {
   text-decoration: none;
   color: black;
-  font-size: 2.5vw;
+  font-size: calc(2.8vh / 2 + 2.8vw / 2);
+}
+
+.search_align{
+  align-self: center;
 }
 
 input {
   margin-right: 1px;
-  margin-top: 0.5px;
-  height: 5.4vh;
+  height: calc(3.1vh/2 + 3.1vw/2);
   width: 22vw;
   font-size: 1.8vw;
+}
+
+.logo{
+  width: 17%;
+  padding-right: 1.5px;
+  position: relative;
+  bottom: calc(-0.2vh/2 + -0.2vw/2);
 }
