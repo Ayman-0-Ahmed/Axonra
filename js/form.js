@@ -4,22 +4,21 @@ function validate() {
     if (/\@/.test(email_username)) {
         if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email_username)) {
             return (true)
+        } else {
+          alert("You have entered an invalid email address!");
+          return (false)
         }
-        console.log("You have entered an invalid email address!");
-        return (false)
     } else {
-
-        if (/^\w+([\.-]?\w+)\w+([\.-]?\w+)/.test(email_username)) {
-            alert("You didn't enter a phone number.");
-            error = "You didn't enter a phone number.";
-        } else if (isNaN(parseInt(stripped))) {
-            phone = "";
-            error = "The phone number contains illegal characters.";
-            alert("illegal characters.");
-        } else if (!(stripped.length == 10)) {
-            alert("wrong length");
-            phone = "";
-            error = "The phone number is the wrong length. Make sure you included an area code.\n";
+        if (/^[a-zA-Z][a-zA-Z0-9_.]{5,29}$/.test(email_username)) {
+          alert("This is a valid Username.");
+        } else if (email_username.length < 6) {
+          alert("This username has to be bigger than 6 charecters.");
+        } else if (email_username.length > 30) {
+          alert("This username has to be smaller than 30 charecters.");
+        } else if (/^[0-9_.]$/.test(email_username.charAt(0))) {
+          alert("The first should not be a number or a underscore or period")
+        }else {
+          alert("illegal characters.");
         }
     }
 }

@@ -10,10 +10,16 @@ form {
   margin-top: 25vh;
   margin-bottom: 25vh;
   align-self: center;
+  border: 10px solid transparent;
+  border-image: url(../assets/form_outline.png) 60 stretch;
 }
 
 input {
-  width: 47.5%;
-  margin-left: 25%;
-  margin-right: 25%;
+  width: 57.5%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+input:focus {
+  outline-width: 0px;
 }
