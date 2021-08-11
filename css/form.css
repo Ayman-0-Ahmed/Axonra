@@ -3,23 +3,63 @@ body {
 }
 
 form {
-  width: 30%;
+  background-color: lightgrey;
+  width: 25%;
+  position: absolute;
+  margin: auto;
   height: 50vh;
-  margin-right: 35%;
-  margin-left: 35%;
-  margin-top: 25vh;
-  margin-bottom: 25vh;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
   align-self: center;
-  border: 10px solid transparent;
-  border-image: url(../assets/form_outline.png) 60 stretch;
 }
 
+div{
+    height: 57vh;
+    width: 28%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    background-color: #1c1b29;
+}
+div:before{
+    content: "";
+    background-image: url(../assets/form_outline.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 150%;
+    width: 150%;
+    position: absolute;
+    left: -25%;
+    top: -25%;
+    animation: rotate 4s infinite linear;
+}
+@keyframes rotate{
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+
 input {
-  width: 57.5%;
-  margin-left: 20%;
-  margin-right: 20%;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 input:focus {
   outline-width: 0px;
+}
+
+label {
+  font-size: 1.4vw;
+  position: relative;
+  top: 0.8%;
+  left: 18%;
+  background-color: lightgrey;
 }
