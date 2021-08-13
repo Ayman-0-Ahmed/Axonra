@@ -15,11 +15,19 @@
   <body>
     <nav>
       <li class="align active"><a href=""><img class="logo" src="assets/favicon.png">xonra</a></li>
-      <li class="align"><a href="news.asp">Shop</a></li>
-      <li class="align"><a href="news.asp">Projects</a></li>
-      <li class="align"><a href="contact.asp">Contact</a></li>
-      <li class="align"><a href="about.asp">About</a></li>
+      <li class="align button"><a href="news.asp">Shop</a></li>
+      <li class="align button"><a href="news.asp">Projects</a></li>
+      <li class="align button"><a href="contact.asp">Contact</a></li>
+      <li class="align button"><a href="about.asp">About</a></li>
       <li class="search_align"><input type="search" placeholder="Search"></li>
+      <li><img src="/assets/form_outline.png" width="25px" onclick="drop()">
+        <div class="option-content" id="options">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </li>
     </nav>
+    <script src="/js/main.js" charset="utf-8"></script>
   </body>
 </html>
