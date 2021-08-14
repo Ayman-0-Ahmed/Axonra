@@ -16,11 +16,14 @@
     <div>
     </div>
     <form class="" action="login.html" method="post">
-      <label for="fname-femail">Username or Email</label><br>
-      <input type="text" name="email-username" id="fname-femail" placeholder="Enter your Username or Email" required><br>
-      <label for="fpassword">Password</label><br>
-      <input type="password" name="form-password" id="fpassword" placeholder="Enter your Password" required><br>
-      <input type="button" onclick="validate()" name="signin" value="Sign In">
+      <label class="text-label" for="fname-femail">Username or Email</label><br>
+      <input class="text-input" type="text" name="email-username" id="fname-femail" placeholder="Enter your Username or Email" required><br>
+      <label class="text-label" for="fpassword">Password</label><br>
+      <input class="text-input" type="password" name="form-password" id="fpassword" placeholder="Enter your Password" required>
+      <label for="fremember">Keep Me Signed In</label>
+      <input type="checkbox" name="form-remember" id="fremember">
+      <a href="signup.html">Create an account</a>
+      <input type="submit" onclick="validate()" name="signin" value="Sign In">
     </form>
     <script src="js\form.js" charset="utf-8"></script>
   </body>
