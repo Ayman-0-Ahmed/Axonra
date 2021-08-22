@@ -115,3 +115,10 @@ form {
 .first {
   margin-top: calc(2.4vh/2 + 2.4vw/2);;
 }
+
+object {
+  position: absolute;
+  top: 43.6%;
+  right: 9.5%;
+  width: 8%;
+}

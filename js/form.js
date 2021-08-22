@@ -1,6 +1,8 @@
-function validate() {
-    var email_username = document.getElementById('fname-femail').value;
+var email_username = document.getElementById('fname-femail').value;
+var form_password = getElementsByClassName('show-hide');
+var hidden = true;
 
+function validate() {
     if (/\@/.test(email_username)) {
         if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email_username)) {
             return (true)
@@ -22,4 +24,14 @@ function validate() {
           alert("illegal characters.");
         }
     }
+}
+
+function show_hide() {
+  if (hidden) {
+    form_password.setAttribute("type", "text");
+    hidden = false;
+  } else {
+    form_password.setAttribute("type", "password");
+    hidden = true;
+  }
 }
