@@ -50,15 +50,16 @@ form {
 }
 
 .text-input {
-  width: 80%;
-  margin-left: 8.5%;
-  margin-right: 11.5%;
+  border-radius: calc(0.4vh/2 + 0.4vw/2);
+  font-size: calc(1.5vh/2 + 1.5vw/2);
+  background-color: rgb(40 40 40);
+  height: calc(2vh/2 + 2vw/2);
+  font-family: cursive;
   border-color: white;
   border-style: solid;
-  height: calc(2vh/2 + 2vw/2);
-  background-color: rgb(40 40 40);
-  font-size: calc(1.5vh/2 + 1.5vw/2);
-  font-family: cursive;
+  position: absolute;
+  width: 80%;
+  left: 9%;
 }
 
 .text-input:focus {
@@ -66,50 +67,70 @@ form {
 }
 
 .text-label {
-  font-size: calc(1.8vh/2 + 1.8vw/2);
-  position: relative;
-  top: calc(0.28vh/2 + 0.28vw/2);
-  left: 15%;
+  font-size: calc(1.7vh/2 + 1.7vw/2);
   background-color: rgb(40 40 40);
+  position: absolute;
+  z-index: 1;
+  left: 18%;
+}
+
+.email {
+  top: calc(3.2vh/2 + 3.2vw/2);
+}
+
+#fname-femail {
+  top: calc(5.25vh/2 + 5.25vw/2);
+  color: rgb(255 255 255);
+}
+
+.password {
+  top: calc(8.9vh/2 + 8.9vw/2);
+}
+
+#fpassword {
+  top: calc(10.8vh/2 + 10.8vw/2);
 }
 
 .remember-label {
   font-size: calc(1.5vh/2 + 1.5vw/2);
-  position: relative;
-  top: calc(-0.1vh/2 + -0.1vw/2);
-  left: -1.2%;
+  top: calc(13.8vh/2 + 13.8vw/2);
+  position: absolute;
+  width: 30%;
+  left: 13%;
 }
 
 .remember {
-  margin-left: 10%;
-  margin-top: 3%;
-  border-radius: 8vw;
+  top: calc(13.9vh/2 + 13.9vw/2);
+  position: absolute;
+  left: 8.5%;
 }
 
 .sign-in {
-  width: 30%;
-  height: 9%;
-  margin-left: 35%;
-  margin-right: 35%;
+  border-radius: calc(5vh/2 + 5vw/2);
+  font-size: calc(1.4vh/2 + 1.4vw/2);
+  border: 2px solid rgb(62 223 15);
+  top: calc(16.2vh/2 + 16.2vw/2);
   background-color: transparent;
   color: rgb(200 200 200);
-  border: 2px solid rgb(62 223 15);
-  margin-top: 2%;
-  margin-bottom: 2.5%;
-  font-size: calc(1.5vh/2 + 1.5vw/2);
+  position: absolute;
+  right: 35%;
+  width: 30%;
+  height: 11.5%;
 }
 
 .signup {
+  font-size: calc(1.7vh/2 + 1.7vw/2);
+  top: calc(19vh/2 + 19vw/2);
   color: rgb(54 167 255);
   text-decoration: none;
-  margin-left: 52%;
-  font-size: calc(1.7vh/2 + 1.7vw/2);
+  position: absolute;
+  left: 59%;
 }
 
 .signup:visited {
   color: rgb(54 167 255);
   text-decoration: none;
-  margin-left: 52%;
+  left: 59%;
 }
 
 .first {
