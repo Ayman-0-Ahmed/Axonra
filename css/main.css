@@ -3,7 +3,7 @@ body{
   width: 100%;
 }
 
-nav {
+.navigation {
   list-style-type: none;
   display: flex;
   width: 100%;
@@ -35,7 +35,7 @@ nav {
   padding-right: 1.5%;
 }
 
-a {
+.navigation a {
   text-decoration: none;
   color: black;
   font-size: calc(2.8vh / 2 + 2.8vw / 2);
@@ -43,13 +43,6 @@ a {
 
 .search_align{
   align-self: center;
-}
-
-input {
-  margin-right: 1px;
-  height: calc(3.1vh/2 + 3.1vw/2);
-  width: 22vw;
-  font-size: 1.8vw;
 }
 
 .logo{
@@ -74,4 +67,34 @@ input {
 
 .show {
   display: block;
+}
+
+.sidenav {
+  font-size: calc(3vh/2 + 3vw/2);
+  width: 15%;
+  float: left;
+  height: 100%;
+  background-color: lightgreen;
+  list-style-type: none;
+}
+
+.sidenav li {
+  margin-left: 4%;
+}
+
+.sidenav a {
+  text-decoration: none;
+  color: black;
+  font-size: calc(3vh/2 + 3vw/2);
+}
+
+.filters {
+  margin-left: 0px !important;
+  text-align: center;
+  border: 2px solid black;
+}
+
+main {
+  width: 85%;
+  float: right;
 }
