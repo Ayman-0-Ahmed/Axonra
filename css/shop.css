@@ -3,7 +3,7 @@ body{
   width: 100%;
 }
 
-nav {
+.navigation {
   list-style-type: none;
   display: flex;
   width: 100%;
@@ -102,4 +102,34 @@ input {
   width: 90%;
   height: 90%;
   background-color: lightblue;
+}
+
+.sidenav {
+  font-size: calc(3vh/2 + 3vw/2);
+  width: 15%;
+  float: left;
+  height: 100%;
+  background-color: lightgreen;
+  list-style-type: none;
+}
+
+.sidenav li {
+  margin-left: 4%;
+}
+
+.sidenav a {
+  text-decoration: none;
+  color: black;
+  font-size: calc(3vh/2 + 3vw/2);
+}
+
+.filters {
+  margin-left: 0px !important;
+  text-align: center;
+  border: 2px solid black;
+}
+
+main {
+  width: 85%;
+  float: right;
 }
