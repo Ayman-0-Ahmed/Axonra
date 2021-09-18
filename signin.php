@@ -14,18 +14,19 @@
   </head>
   <body>
     <div class="form-outline"></div>
-    <form class="" action="login.html" method="post">
+    <form class="" action="signin.php" method="get">
       <div class="first"></div>
       <label class="text-label email" for="fname-femail">Username or Email</label>
       <input class="text-input" type="text" name="email-username" id="fname-femail" placeholder="Enter your Username or Email" required><br>
       <label class="text-label password" for="fpassword">Password</label>
-      <input class="text-input" type="password" name="form-password" id="fpassword" placeholder="Enter your Password" required>
-      <object id="show-hide" data="assets/eye.svg" onclick="show_hide()"></object>
-      <input class="remember" type="checkbox" name="form-remember" id="fremember">
+      <input class="text-input" type="password" name="password" id="fpassword" placeholder="Enter your Password" required>
+      <img class="hide-show" id="show_icon" src="assets/show.svg" onclick="show_hide()"></object>
+      <input class="remember" type="checkbox" name="remember" id="fremember">
       <label class="remember-label" for="fremember">Keep Me Signed In</label>
       <input class="sign-in" type="submit" onclick="validate()" name="signin" value="Sign In">
       <a class="signup" href="signup.html">Create an account</a>
     </form>
-    <script src="js\form.js" charset="utf-8"></script>
+
+    <?php  ?>
   </body>
 </html>

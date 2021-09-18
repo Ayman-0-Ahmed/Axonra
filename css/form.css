@@ -1,11 +1,11 @@
 body {
-  background-color: rgb(25, 25, 25);
+  background-color: #fff;
   font-family: cursive, serif;
-  color: rgb(200 200 200);
+  color: #000;
 }
 
 form {
-  background-color: rgb(40, 40, 40);
+  background-color: #fff;
   border-radius: calc(1vh/2 + 1vw/2);
   height: calc(25.2vh/2 + 25.2vw/2);
   width: calc(46vh/2 + 46vw/2);
@@ -52,10 +52,10 @@ form {
 .text-input {
   border-radius: calc(0.4vh/2 + 0.4vw/2);
   font-size: calc(1.5vh/2 + 1.5vw/2);
-  background-color: rgb(40 40 40);
+  background-color: #fff;
   height: calc(2vh/2 + 2vw/2);
   font-family: cursive;
-  border-color: white;
+  border-color: #000;
   border-style: solid;
   position: absolute;
   width: 80%;
@@ -68,7 +68,7 @@ form {
 
 .text-label {
   font-size: calc(1.7vh/2 + 1.7vw/2);
-  background-color: rgb(40 40 40);
+  background-color: #fff;
   position: absolute;
   z-index: 1;
   left: 18%;
@@ -80,7 +80,6 @@ form {
 
 #fname-femail {
   top: calc(5.25vh/2 + 5.25vw/2);
-  color: rgb(255 255 255);
 }
 
 .password {
@@ -111,7 +110,7 @@ form {
   border: 2px solid rgb(62 223 15);
   top: calc(16.2vh/2 + 16.2vw/2);
   background-color: transparent;
-  color: rgb(200 200 200);
+  color: #000;
   position: absolute;
   right: 35%;
   width: 30%;
@@ -137,9 +136,39 @@ form {
   margin-top: calc(2.4vh/2 + 2.4vw/2);;
 }
 
-object {
+.show-hide {
   position: absolute;
-  top: 43.6%;
-  right: 9.5%;
-  width: 8%;
+  right: 10%;
+  width: 7%;
+  top: 46.2%;
+}
+
+.hide-show {
+  position: absolute;
+  right: 10%;
+  width: 7%;
+  top: 44.6%;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #191919;
+    color: #d9d9d9;
+  }
+  form {
+    background-color: #282828;
+  }
+
+  .text-input {
+    border-color: #fff;
+    background-color: #282828;
+  }
+
+  .text-label {
+    background-color: #282828;
+  }
+
+  .sign-in {
+    color: #d9d9d9;
+  }
 }
