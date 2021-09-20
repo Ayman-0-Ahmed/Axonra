@@ -3,7 +3,6 @@ body {
   font-family: cursive, serif;
   color: #000;
 }
-
 form {
   background-color: #fff;
   border-radius: calc(1vh/2 + 1vw/2);
@@ -17,7 +16,6 @@ form {
   bottom: 0;
   align-self: center;
 }
-
 .form-outline {
   border-radius: calc(1.5vh/2 + 1.5vw/2);
   height: calc(26vh/2 + 26vw/2);
@@ -42,13 +40,11 @@ form {
   top: -60%;
   animation: spin 12s infinite linear;
 }
-
 @keyframes spin {
     100%{
         transform: rotate(-360deg);
     }
 }
-
 .text-input {
   border-radius: calc(0.4vh/2 + 0.4vw/2);
   font-size: calc(1.5vh/2 + 1.5vw/2);
@@ -60,12 +56,11 @@ form {
   position: absolute;
   width: 80%;
   left: 9%;
+  color: #000;
 }
-
 .text-input:focus {
   outline-width: 0px;
 }
-
 .text-label {
   font-size: calc(1.7vh/2 + 1.7vw/2);
   background-color: #fff;
@@ -73,12 +68,11 @@ form {
   z-index: 1;
   left: 18%;
 }
-
 .email {
   top: calc(3.2vh/2 + 3.2vw/2);
 }
 
-#fname-femail {
+#name-email {
   top: calc(5.25vh/2 + 5.25vw/2);
 }
 
@@ -86,7 +80,7 @@ form {
   top: calc(8.9vh/2 + 8.9vw/2);
 }
 
-#fpassword {
+#password {
   top: calc(10.8vh/2 + 10.8vw/2);
 }
 
@@ -95,13 +89,27 @@ form {
   top: calc(13.8vh/2 + 13.8vw/2);
   position: absolute;
   width: 30%;
-  left: 13%;
+  left: 14%;
 }
 
 .remember {
-  top: calc(13.9vh/2 + 13.9vw/2);
+  top: calc(13.7vh/2 + 13.7vw/2);
+  -webkit-appearance: none;
+  width: calc(1.8vh/2 + 1.8vw/2);
+  height: calc(1.8vh/2 + 1.8vw/2);
+  box-shadow: -8 -8 15 rgba(0,0,0,0.65), 8 8 15 rgba(40,40,40,0.12);
+  border-radius: 10%;
   position: absolute;
   left: 8.5%;
+  background-repeat: no-repeat;
+  background-size: 85% 100%;
+  background-position: center;
+  background-image: url(../assets/checked.png);
+  border: calc(0.25vh/2 + 0.25vw/2) solid black;
+}
+
+.remember:checked {
+  background-image: none;
 }
 
 .sign-in {
@@ -162,6 +170,7 @@ form {
   .text-input {
     border-color: #fff;
     background-color: #282828;
+    color: #FFF;
   }
 
   .text-label {

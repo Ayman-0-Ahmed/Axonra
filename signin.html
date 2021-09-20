@@ -16,17 +16,16 @@
     <div class="form-outline"></div>
     <form class="" action="signin.php" method="get">
       <div class="first"></div>
-      <label class="text-label email" for="fname-femail">Username or Email</label>
-      <input class="text-input" type="text" name="email-username" id="fname-femail" placeholder="Enter your Username or Email" required><br>
-      <label class="text-label password" for="fpassword">Password</label>
-      <input class="text-input" type="password" name="password" id="fpassword" placeholder="Enter your Password" required>
-      <img class="hide-show" id="show_icon" src="assets/show.svg" onclick="show_hide()"></object>
-      <input class="remember" type="checkbox" name="remember" id="fremember">
-      <label class="remember-label" for="fremember">Keep Me Signed In</label>
+      <label class="text-label email" for="name-femail">Username or Email</label>
+      <input class="text-input" type="text" id="name-email" placeholder="Enter your Username or Email" required><br>
+      <label class="text-label password" for="password">Password</label>
+      <input class="text-input" type="password" id="password" placeholder="Enter your Password" required>
+      <img class="hide-show" id="show_icon" src="assets/show.svg" onclick="show_hide()">
+      <input class="remember" type="checkbox" id="remember" checked>
+      <label class="remember-label" for="remember">Keep Me Signed In</label>
       <input class="sign-in" type="submit" onclick="validate()" name="signin" value="Sign In">
       <a class="signup" href="signup.html">Create an account</a>
     </form>
-
-    <?php  ?>
+    <script src="js/form.js" charset="utf-8"></script>
   </body>
 </html>
