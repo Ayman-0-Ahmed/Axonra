@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="css/shop.css">
   </head>
-  <body onload="load()">
+  <body>
     <nav class="navigation">
       <li class="align active"><a href=""><img class="logo" src="assets/favicon.png">xonra</a></li>
       <li class="align button"><a href="news.asp">Shop</a></li>
@@ -46,6 +46,16 @@
     </nav>
 
     <main id="main">
+      <?php
+      $url = "products/";
+      $products = scandir($url);
+      $num = 8;
+      for ($i=0; $i < count($products) - 2; $i++) {
+        $random = rand(2, count($products) - 1);
+        $name = str_replace(".svg", "", $products[$random]);
+        echo "<div class='product_display'><img class='product_image' src='products/$products[$random]'><div class='product_name'>$name</div><div class='product_descreption'>This is a 3D Model of a Car</div></div>";
+      }
+      ?>
     </main>
 
     <footer></footer>

@@ -172,9 +172,9 @@ main {
 }
 
 .product_display {
-  border: 3px solid #383838;
   border-radius: calc(0.8vh/2 + 0.8vw/2);
   margin: 0.2%;
+  background: radial-gradient(Red 14.28%, blue 40%, yellow 40%);
 }
 
 .product_name {
