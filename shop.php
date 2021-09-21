@@ -49,11 +49,12 @@
       <?php
       $url = "products/";
       $products = scandir($url);
-      $num = 8;
-      for ($i=0; $i < count($products) - 2; $i++) {
-        $random = rand(2, count($products) - 1);
-        $name = str_replace(".svg", "", $products[$random]);
-        echo "<div class='product_display'><img class='product_image' src='products/$products[$random]'><div class='product_name'>$name</div><div class='product_descreption'>This is a 3D Model of a Car</div></div>";
+      unset($products[0]);
+      unset($products[1]);
+      shuffle($products);
+      for ($i = 0; $i <= count($products) -1; $i++) {
+        $name = str_replace(".svg", "", $products[$i]);
+        echo "<div class='product_display'><div class='display_outline'></div><img class='product_image' src='products/$products[$i]'><div class='product_name'>$name</div><div class='product_descreption'>This is a 3D Model of a Car</div></div>";
       }
       ?>
     </main>
