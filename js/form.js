@@ -26,17 +26,3 @@ function validate() {
     }
   }
 }
-
-function show_hide() {
-  if (hidden) {
-    form_password.setAttribute("type", "text");
-    show_icon.setAttribute("src", "assets/hide.svg");
-    show_icon.setAttribute("class", "show-hide");
-    hidden = false;
-  } else {
-    form_password.setAttribute("type", "password");
-    show_icon.setAttribute("src", "assets/show.svg");
-    show_icon.setAttribute("class", "hide-show");
-    hidden = true;
-  }
-}

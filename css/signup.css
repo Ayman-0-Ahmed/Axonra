@@ -1,0 +1,325 @@
+body {
+  background-color: #f1f1f1;
+  font-family: cursive, serif;
+  color: #000;
+}
+
+form {
+  background-color: #f7f7f7;
+  border-radius: calc(1vh/2 + 1vw/2);
+  height: calc(44vh/2 + 44vw/2);
+  width: calc(60vh/2 + 60vw/2);
+  position: absolute;
+  margin: auto;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  align-self: center;
+  z-index: -3;
+}
+
+.form-outline {
+  border-radius: calc(1.5vh/2 + 1.5vw/2);
+  height: calc(45vh/2 + 45vw/2);
+  width: calc(61vh/2 + 61vw/2);
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: -5;
+}
+
+.form-outline:before {
+  content: "";
+  background-image: conic-gradient(#ff0000 7.8%,#ff5900 14.9%,#ff5900 22%,#ffff00 29.1%,#ffff00 36.2%,#00ff00 43.3%,#00ff00 50.4%,#00ffff 57.5%,#00ffff 64.6%,#0000ff 71.7%,#0000ff 78.8%,#ff00ff 85.9%,#ff00ff 93%,#ff0000);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 450%;
+  width: 225%;
+  position: absolute;
+  left: -80%;
+  top: -110%;
+  animation: spin 6s infinite linear;
+}
+
+.text-input {
+  border-radius: calc(0.4vh/2 + 0.4vw/2);
+  font-size: calc(1.5vh/2 + 1.5vw/2);
+  height: calc(2vh/2 + 2vw/2);
+  background-color: #f7f7f7;
+  font-family: cursive;
+  border-color: #000;
+  border-style: solid;
+  position: absolute;
+  width: 80%;
+  left: 9%;
+  color: #000;
+}
+
+.text-input:focus {
+  outline-width: 0px;
+}
+
+.text-label {
+  font-size: calc(1.7vh/2 + 1.7vw/2);
+  background-color: #f7f7f7;
+  position: absolute;
+  z-index: 1;
+  left: 13%;
+}
+
+label[for="first-name"] {
+  top: calc(2.5vh/2 + 2.5vw/2);
+}
+
+#first-name {
+  top: calc(4.55vh/2 + 4.55vw/2);
+  width: 38.5%;
+}
+
+label[for="last-name"] {
+  left: 54%;
+  top: calc(2.5vh/2 + 2.5vw/2);
+}
+
+#last-name {
+  top: calc(4.55vh/2 + 4.55vw/2);
+  left: 50.5%;
+  width: 38.5%;
+}
+
+label[for="username"] {
+  top: calc(7.5vh/2 + 7.5vw/2);
+}
+
+#username {
+  top: calc(9.55vh/2 + 9.55vw/2);
+}
+
+label[for="email"] {
+  top: calc(12.5vh/2 + 12.5vw/2);
+}
+
+#email {
+  top: calc(14.55vh/2 + 14.55vw/2);
+}
+
+label[for="password"] {
+  top: calc(17.5vh/2 + 17.5vw/2);
+}
+
+#password {
+  top: calc(19.55vh/2 + 19.55vw/2);
+}
+
+label[for="repeat-password"] {
+  top: calc(22.5vh/2 + 22.5vw/2);
+}
+
+#repeat-password {
+  top: calc(24.55vh/2 + 24.55vw/2);
+}
+
+label[for="gender"] {
+  font-size: calc(1.7vh/2 + 1.7vw/2);
+  top: calc(27.5vh/2 + 27.5vw/2);
+  position: absolute;
+  z-index: 10;
+}
+
+.genderDrop {
+  border-radius: calc(0.4vh/2 + 0.4vw/2);
+  font-size: calc(1.7vh/2 + 1.7vw/2);
+  top: calc(29.5vh/2 + 29.5vw/2);
+  background-color: transparent;
+  font-family: cursive, serif;
+  padding: 0% 0% 0% 1.3%;
+  border: 2px solid #000;
+  position: absolute;
+  text-align: left;
+  z-index: -2;
+  color: #000;
+  width: 25%;
+  left: 9%;
+}
+
+.gender-option {
+  border-radius: calc(0.4vh/2 + 0.4vw/2);
+  height: calc(7.5vh/2 + 7.5vw/2);
+  top: calc(29.5vh/2 + 29.5vw/2);
+  border: 2px solid #000;
+  position: absolute;
+  display: none;
+  width: 24.5%;
+  left: 9%;
+}
+
+.gender-option label {
+  border-radius: calc(0.4vh/2 + 0.4vw/2);
+  border: 2px solid #000;
+  position: absolute;
+  padding-left: 5%;
+  color: #000;
+  left: -1.2%;
+  width: 94.8%;
+}
+
+label[for="male"] {
+  top: calc(-0.2vh/2 + -0.2vw/2);
+}
+
+label[for="female"] {
+  top: calc(2.4vh/2 + 2.4vw/2);
+}
+
+label[for="unknown"] {
+  top: calc(4.9vh/2 + 4.9vw/2);
+}
+
+input[name="gender"] {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+label[for="birthday"] {
+  top: calc(27.5vh/2 + 27.5vw/2);
+  left: 40%;
+}
+
+#birthday {
+  border-radius: calc(0.4vh/2 + 0.4vw/2);
+  top: calc(29.5vh/2 + 29.5vw/2);
+  background-color: transparent;
+  border: 2px solid #000;
+  position: absolute;
+  height: 5.5%;
+  color: #000;
+  width: 54.5%;
+  left: 35%;
+}
+
+.remember-label {
+  font-size: calc(1.5vh/2 + 1.5vw/2);
+  top: calc(33.1vh/2 + 33.1vw/2);
+  position: absolute;
+  left: 12.8%;
+}
+
+.remember {
+  top: calc(33vh/2 + 33vw/2);
+  -webkit-appearance: none;
+  width: calc(1.8vh/2 + 1.8vw/2);
+  height: calc(1.8vh/2 + 1.8vw/2);
+  box-shadow: -8 -8 15 rgba(0,0,0,0.65), 8 8 15 rgba(40,40,40,0.12);
+  border-radius: 12%;
+  position: absolute;
+  left: 8.5%;
+  background-repeat: no-repeat;
+  background-size: 85% 100%;
+  background-position: center;
+  background-color: #f7f7f7;
+  background-image: url(../assets/checked.png);
+  border: calc(0.25vh/2 + 0.25vw/2) solid #000;
+}
+
+.remember:checked {
+  background-image: none;
+}
+
+.sign-up {
+  border-radius: calc(5vh/2 + 5vw/2);
+  font-size: calc(1.4vh/2 + 1.4vw/2);
+  border: 2px solid rgb(62 223 15);
+  top: calc(35.7vh/2 + 35.7vw/2);
+  background-color: transparent;
+  color: #000;
+  position: absolute;
+  right: 35%;
+  width: 30%;
+  height: 7%;
+}
+
+.signin {
+  font-size: calc(1.7vh/2 + 1.7vw/2);
+  top: calc(38.5vh/2 + 38.5vw/2);
+  color: rgb(54 167 255);
+  text-decoration: none;
+  position: absolute;
+  left: 68%;
+}
+
+.signin:visited {
+  color: rgb(54 167 255);
+  text-decoration: none;
+  left: 59%;
+}
+
+.show-hide {
+  top: calc(20.4vh/2 + 20.4vw/2);
+  position: absolute;
+  right: 10%;
+  width: 7%;
+}
+
+.hide-show {
+  position: absolute;
+  right: 10%;
+  width: 7%;
+  top: calc(19.8vh/2 + 19.8vw/2);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #191919;
+    color: #fff;
+  }
+  form {
+    background-color: #282828;
+  }
+
+  .text-input {
+    border-color: #fff;
+    background-color: #282828;
+    color: #fff;
+  }
+
+  .text-label {
+    background-color: #282828;
+  }
+
+  .genderDrop {
+    border-color: #fff;
+    color: #fff;
+  }
+
+  .gender-option {
+    color: #fff;
+  }
+
+  #birthday {
+    color: #fff;
+    border-color: #fff;
+  }
+
+  .remember {
+    border-color: #fff;
+    background-color: #282828;
+  }
+
+  .sign-up {
+    color: #fff;
+  }
+}
+
+@keyframes spin {
+  100%{
+    transform: rotate(-360deg);
+  }
+}

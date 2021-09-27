@@ -47,8 +47,7 @@
 
     <main id="main">
       <?php
-      $url = "products/";
-      $products = scandir($url);
+      $products = scandir("products/");
       unset($products[0]);
       unset($products[1]);
       shuffle($products);
