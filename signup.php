@@ -14,33 +14,33 @@
   </head>
   <body>
     <div class="form-outline"></div>
-    <form action="signup.inc.php" method="post">
+    <form action="includes\signup.inc.php" method="post">
       <label class="text-label" for="first-name">First Name</label>
-      <input class="text-input" type="text" id="first-name" placeholder="Write your First Name" required>
+      <input class="text-input" type="text" name="firstName" id="first-name" placeholder="Write your First Name">
       <label class="text-label" for="last-name">Last Name</label>
-      <input class="text-input" type="text" id="last-name" placeholder="Write your Last Name" required>
+      <input class="text-input" type="text" name="lastName" id="last-name" placeholder="Write your Last Name">
       <label class="text-label" for="username">Username</label>
-      <input class="text-input" type="username" id="username" placeholder="Make a Username" required>
+      <input class="text-input" type="username" name="username" id="username" placeholder="Make a Username">
       <label class="text-label" for="email">Email</label>
-      <input class="text-input" type="email" id="email" placeholder="Enter your E-mail" required>
+      <input class="text-input" type="email" name="email" id="email" placeholder="Enter your E-mail">
       <label class="text-label" for="password">Password</label>
-      <input class="text-input" type="password" id="password" placeholder="Make a Password" required>
+      <input class="text-input" type="password" name="password" id="password" placeholder="Make a Password">
       <img class="hide-show" src="assets/show.svg" id="show_icon" onclick="show_hide()">
       <label class="text-label" for="repeat-password">Repeat Password</label>
-      <input class="text-input" type="password" id="repeat-password" placeholder="Repeat the Password" required>
+      <input class="text-input" type="password" name="passwodRepeat" id="repeat-password" placeholder="Repeat the Password">
       <label class="text-label" for="gender" id="genderLabel">Gender</label>
-      <input class="genderDrop" type="button" id="gender" value="Male" onclick="genderDrop()">
+      <input class="genderDrop" type="button" name="genderSelect" id="gender" value="Male" onclick="genderDrop()">
       <div class="gender-option" id="gender-option">
         <label class="text-label" for="male">Male</label>
-        <input type="radio" name="gender" id="male" value="Male" onclick="genderClose()" checked>
+        <input type="radio" name="gender" id="male" value="Male" onclick="genderClose()">
         <label class="text-label" for="female">Female</label>
         <input type="radio" name="gender" id="female" value="Female" onclick="genderClose()">
         <label class="text-label" for="unknown">Rather Not Say</label>
-        <input type="radio" name="gender" id="unknown" value="Rather Not Say" onclick="genderClose()">
+        <input type="radio" name="gender" id="unknown" value="Rather Not Say" onclick="genderClose()" checked>
       </div>
       <label class="text-label" for="birthday">Birthday</label>
       <input type="date" name="birthday" id="birthday">
-      <input class="remember" type="checkbox" id="remember">
+      <input class="remember" type="checkbox" name="remember" id="remember">
       <label class="remember-label" for="remember">Keep Me Signed In</label>
       <input class="sign-up" type="submit" name="signup" value="Sign Up">
       <a class="signin" href="signup.html">Sign In Insted</a>

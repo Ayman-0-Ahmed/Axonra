@@ -14,12 +14,12 @@
   </head>
   <body>
     <div class="form-outline"></div>
-    <form action="signin.inc.php" method="post">
+    <form action="includes\signin.inc.php" method="post">
       <div class="first"></div>
       <label class="text-label email" for="name-femail">Username or Email</label>
-      <input class="text-input" type="text" id="name-email" placeholder="Enter your Username or Email" required><br>
+      <input class="text-input" type="text" name="username_email" id="name-email" placeholder="Enter your Username or Email" required><br>
       <label class="text-label password" for="password">Password</label>
-      <input class="text-input" type="password" id="password" placeholder="Enter your Password" required>
+      <input class="text-input" type="password" name="password" id="password" placeholder="Enter your Password" required>
       <img class="hide-show" id="show_icon" src="assets/show.svg" onclick="show_hide()">
       <input class="remember" type="checkbox" id="remember" checked>
       <label class="remember-label" for="remember">Keep Me Signed In</label>
