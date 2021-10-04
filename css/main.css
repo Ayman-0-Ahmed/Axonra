@@ -7,7 +7,7 @@ body{
   list-style-type: none;
   display: flex;
   width: 100%;
-  background-color: lightblue;
+  background-image: linear-gradient(to right, #ff2c2c, #ff005c, #ff0091, #e200ca, #9837ff);
 }
 
 .align {
