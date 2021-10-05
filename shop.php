@@ -51,9 +51,9 @@
       unset($products[0]);
       unset($products[1]);
       shuffle($products);
-      for ($i = 0; $i <= count($products) -1; $i++) {
+      for ($i = 0; $i <= count($products) - 1; $i++) {
         $name = str_replace(".svg", "", $products[$i]);
-        echo "<div class='product_display'><div class='display_outline'></div><img class='product_image' src='products/$products[$i]'><div class='product_name'>$name</div><div class='product_descreption'>This is a 3D Model of a Car</div></div>";
+        echo "<div class='product_display'><div class='display_outline'></div><img class='product_image' src='products/$products[$i]'><div class='product_name'>$name</div><div class='product_descreption'>This is a 3D Model of a Car</div><div class='price'>2$</div></div>";
       }
       ?>
     </main>
