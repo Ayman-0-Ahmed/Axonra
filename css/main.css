@@ -62,6 +62,10 @@ body{
   bottom: calc(-0.2vh/2 + -0.2vw/2);
 }
 
+.profile-pic {
+  width: 3vw;
+}
+
 .option-content{
   display: none;
   position: absolute;
@@ -79,32 +83,14 @@ body{
   display: block;
 }
 
-.sidenav {
-  font-size: calc(3vh/2 + 3vw/2);
-  width: 15%;
-  float: left;
-  height: 100%;
-  background-color: lightgreen;
-  list-style-type: none;
-}
-
-.sidenav li {
-  margin-left: 4%;
-}
-
-.sidenav a {
-  text-decoration: none;
-  color: black;
-  font-size: calc(3vh/2 + 3vw/2);
-}
-
-.filters {
-  margin-left: 0px !important;
-  text-align: center;
-  border: 2px solid black;
-}
-
 main {
-  width: 85%;
-  float: right;
+  background-color: #FF8BA8;  
+}
+
+main article {
+  text-align: center;
+}
+
+article h4 {
+  text-align: justify;
 }
