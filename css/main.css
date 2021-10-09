@@ -1,6 +1,16 @@
+:root {
+  --color-primary: ;
+  --color-secondary: ;
+  --color-accent: ;
+  --bg-color-primary: ;
+  --bg-color-secondary: ;
+  --bg-color-accent: #B99CF6;
+}
+
 body{
   margin: 0;
   width: 100%;
+  background-color: var(--bg-color-accent);
 }
 
 .navigation {

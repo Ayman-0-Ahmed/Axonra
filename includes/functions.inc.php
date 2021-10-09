@@ -73,7 +73,7 @@ function usernameTaken($conn, $username, $email) {
 }
 
 function createUser($conn, $firstname, $lastname, $username, $email, $password, $gender, $birthday) {
-  $sql = "INSERT INTO users (name, email, username, password, gender, birthday) VALUES (?, ?, ?, ?);";
+  $sql = "INSERT INTO users (fullname, userName, userEmail, userPassword, userGender, userBirthday) VALUES (?, ?, ?, ?, ?, ?);";
   $stmt = mysqli_stmt_init($conn);
   if (!mysqli_stmt_prepare($stmt, $sql)) {
     header("location: ../signup.php?error=usernametaken");

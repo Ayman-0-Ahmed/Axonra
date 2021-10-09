@@ -1,9 +1,9 @@
 <?php
 
-$serverName = "";
-$dBUsername = "";
+$serverName = "localhost";
+$dBUsername = "root";
 $dBpassword = "";
-$dBName = "";
+$dBName = "axonra";
 
 $conn = mysqli_connect($serverName, $dBUsername, $dBpassword, $dBName);
 

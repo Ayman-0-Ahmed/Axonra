@@ -7,9 +7,8 @@ if (isset($_POST["submit"])) {
   $email = $_POST["email"];
   $password = $_POST["password"];
   $passwordRepeat = $_POST["passwodRepeat"];
-  $gender = $_POST["genderSelect"];
+  $gender = "M";
   $birthday = $_POST["birthday"];
-  $remember = $_POST["remember"];
 
   require_once 'dbh.inc.php';
   require_once 'functions.inc.php';
