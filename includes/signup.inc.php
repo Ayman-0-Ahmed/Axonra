@@ -13,8 +13,32 @@ if (isset($_POST["submit"])) {
   require_once 'dbh.inc.php';
   require_once 'functions.inc.php';
 
-  if (emptyInput($firstname, $lastname, $username, $email, $password, $passwordRepeat) !== false) {
-    header("location: ../signup.php?error=usernametaken");
+  if (empty($firstname)) {
+    header("location: ../signup.php?error=emptyfirstname");
+    exit();
+  }
+  if (empty($lastname)) {
+    header("location: ../signup.php?error=emptylastname");
+    exit();
+  }
+  if (empty($email)) {
+    header("location: ../signup.php?error=emptyemail");
+    exit();
+  }
+  if (empty($username)) {
+    header("location: ../signup.php?error=emptyusername");
+    exit();
+  }
+  if (empty($password)) {
+    header("location: ../signup.php?error=emptyfirstname");
+    exit();
+  }
+  if (empty($repeat)) {
+    header("location: ../signup.php?error=emptylastname");
+    exit();
+  }
+  if (empty($birthday)) {
+    header("location: ../signup.php?error=emptyemail");
     exit();
   }
   if (invalidEmail($email) !== false) {

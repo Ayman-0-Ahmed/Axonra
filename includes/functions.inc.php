@@ -1,27 +1,7 @@
 <?php
 
-function emptyInput($firstname, $lastname, $username, $email, $password, $passwordRepeat) {
-  $result;
-  if (empty($firstname)) {
-    $result = true;
-  } elseif (empty($lastname)) {
-    $result = true;
-  } elseif (empty($username)) {
-    $result = true;
-  } elseif (empty($email)) {
-    $result = true;
-  } elseif (empty($password)) {
-    $result = true;
-  } elseif (empty($passwordRepeat)) {
-    $result = true;
-  } else {
-    $result = false;
-  }
-  return $result;
-}
-
 function invalidUsername($username) {
-  $result
+  $result;
   if (!preg_match("/^[a-zA-Z][a-zA-Z0-9_.]{5,31}$/", $username)) {
     $result = true;
   } else {

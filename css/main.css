@@ -1,69 +1,58 @@
 :root {
-  --color-primary: ;
-  --color-secondary: ;
-  --color-accent: ;
-  --bg-color-primary: ;
-  --bg-color-secondary: ;
-  --bg-color-accent: #B99CF6;
+  --color-primary: #ff2c2c;
+  --color-secondary: #9837ff;
+  --color-accent: #000;
 }
 
 body{
   margin: 0;
   width: 100%;
-  background-color: var(--bg-color-accent);
+  color: var(--color-accent);
 }
 
-.navigation {
-  list-style-type: none;
+.axonra-nav {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: linear-gradient(to right, #ff6161, #ff2c2c, #ff005c, #ff0091, #e200ca, #9837ff);
   width: 100%;
-  background-image: linear-gradient(to right, #ff2c2c, #ff005c, #ff0091, #e200ca, #9837ff);
 }
 
-.align {
-  align-self: center;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.active {
-  background-color: rgba(253, 23, 23, 0.47);
-  width: 11%;
-  border-radius: 4vw;
-  position: relative;
-  top: -0.26px;
-}
-
-.button:active {
-  background-color: rgba(253, 23, 23, 0.47);
-  border-radius: 1vw;
-}
-
-.button {
-  padding-left: 1.5%;
-  padding-right: 1.5%;
-}
-
-.navigation a {
+.axonra-nav a {
   text-decoration: none;
   color: black;
   font-size: calc(2.8vh / 2 + 2.8vw / 2);
 }
 
-.search_align{
-  align-self: center;
+.active {
+  margin-left: -6.4vw;
+  margin-right: 6.4vw;
+  border-radius: 2vw;
+  width: 7.5%;
 }
 
-.logo{
-  width: 17%;
-  padding-right: 1.5px;
+.active img {
+  width: 1.7vw;
+  padding-right: 0.2vw;
   position: relative;
   bottom: calc(-0.2vh/2 + -0.2vw/2);
 }
 
 .profile-pic {
-  width: 3vw;
+  margin-right: -7.4vw;
+  margin-left: 7.4vw;
+  width: 2.5%;
+}
+
+.button:active {
+  background-color: #d40a7aad;
+  border-radius: 1.2vw;
+}
+
+.button {
+  padding-left: 1%;
+  padding-right: 1%;
 }
 
 .option-content{
@@ -84,13 +73,27 @@ body{
 }
 
 main {
-  background-color: #FF8BA8;  
+  background-color: var(--color-primary);
 }
 
-main article {
+.info {
   text-align: center;
+  height: 15vw;
 }
 
-article h4 {
-  text-align: justify;
+.info-img {
+  width: 1.5%;
+}
+
+.info p {
+  padding-top: 2%;
+  margin: 0;
+  font-size: calc(2.5vh/2 + 2.5vw/2);
+}
+
+.coming-soon {
+  background-color: var(--color-secondary);
+  text-align: center;
+  align-items: center;
+  height: 15vw;
 }
